@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a90e2;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #357ab8;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+
+        .section-heading {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project Data Entry Form</h1>
+    <form action="/submit" method="POST">
+        <label for="sr-no">Sr No</label>
+        <input type="number" id="sr-no" name="sr_no">
+
+        <label for="project-number">Project Number</label>
+        <input type="text" id="project-number" name="project_number">
+
+        <label for="project-title">Project Title</label>
+        <input type="text" id="project-title" name="project_title">
+
+        <label for="pi-name">PI Name</label>
+        <input type="text" id="pi-name" name="pi_name">
+
+        <label for="contact-details">Contact Details</label>
+        <input type="text" id="contact-details" name="contact_details">
+
+        <label for="email-pd">Email of PD</label>
+        <input type="email" id="email-pd" name="email_pd">
+
+        <label for="type-of-project">Type of Project</label>
+        <input type="text" id="type-of-project" name="type_of_project">
+
+        <label for="objectives">Objectives</label>
+        <textarea id="objectives" name="objectives" rows="4"></textarea>
+
+        <label for="deliverables">Deliverables</label>
+        <textarea id="deliverables" name="deliverables" rows="4"></textarea>
+
+        <label for="initial-sanctioned-cost">Initial Sanctioned Cost</label>
+        <input type="number" id="initial-sanctioned-cost" name="initial_sanctioned_cost">
+
+        <label for="total-expenditure">Total Expenditure</label>
+        <input type="number" id="total-expenditure" name="total_expenditure">
+
+        <label for="date-of-sanction">Date of Sanction</label>
+        <input type="date" id="date-of-sanction" name="date_of_sanction">
+
+        <label for="pdc-month">PDC (Month)</label>
+        <input type="text" id="pdc-month" name="pdc_month">
+
+        <label for="date-of-completion">Date of Completion</label>
+        <input type="date" id="date-of-completion" name="date_of_completion">
+
+        <div class="section-heading">Extended PDC Date (if any)</div>
+
+        <label for="pdc-extension-1">PDC Extension - 1</label>
+        <input type="text" id="pdc-extension-1" name="pdc_extension_1">
+
+        <label for="pdc-extension-2">PDC Extension - 2</label>
+        <input type="text" id="pdc-extension-2" name="pdc_extension_2">
+
+        <label for="pdc-extension-3">PDC Extension - 3</label>
+        <input type="text" id="pdc-extension-3" name="pdc_extension_3">
+        <div class="section-heading">Manpower</div>
+
+
+        <label for="drds">DRDS</label>
+        <input type="text" id="drds" name="drds">
+
+        <label for="drtc">DRTC</label>
+        <input type="text" id="drtc" name="drtc">
+
+        <label for="sanction-year">Sanction Year</label>
+        <input type="number" id="sanction-year" name="sanction_year">
+
+        <label for="current-status">Current Status</label>
+        <select id="current-status" name="current_status">
+            <option value="ongoing">Ongoing</option>
+            <option value="completed">Completed</option>
+            <option value="closed">Closed</option>
+        </select>
+
+        <label for="date-of-closure">Date of Closure (if applicable)</label>
+        <input type="date" id="date-of-closure" name="date_of_closure">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="footer">
+        © 2024 DRDO SSPL Lab
+    </div>
+</body>
+</html>
